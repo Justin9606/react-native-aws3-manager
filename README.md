@@ -2,6 +2,16 @@
 
 A React Native library for managing uploads, deletions, and retrievals from AWS S3 with enhanced features.
 
+## Why Choose react-native-s3-manager?
+
+`react-native-s3-manager` offers several advantages over the `react-native-aws3` package:
+
+- **Maintained and Updated**: Unlike `react-native-aws3`, which is no longer maintained, `react-native-s3-manager` is actively maintained and regularly updated.
+- **Enhanced Features**: Includes additional functionalities such as the ability to delete objects and retrieve authenticated objects from AWS S3.
+- **TypeScript Support**: Fully written in TypeScript, providing better type safety and developer experience.
+- **Improved Security**: Utilizes `crypto-js` for added security features.
+- **Better Documentation**: Comprehensive and detailed documentation, including examples for all supported operations.
+
 ## Description
 
 `react-native-s3-manager` provides an easy-to-use interface for uploading, deleting, and retrieving files from AWS S3 in React Native applications. This library leverages AWS SDK and offers additional features and security using `crypto-js`.
