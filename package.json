@@ -41,6 +41,7 @@
   },
   "devDependencies": {
     "@types/aws-sdk": "^2.7.0",
+    "@types/crypto-js": "^4.2.2",
     "@types/jest": "^26.0.20",
     "@types/react-native": "^0.64.0",
     "jest": "^26.6.3",
