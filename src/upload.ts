@@ -24,8 +24,14 @@ const uploadFile = async (file: File, options: Options) => {
     region: options.region,
   });
 
+  // Read file data as base64
   const fileData = await RNFetchBlob.fs.readFile(file.uri, "base64");
-  const fileBlob = new Blob([fileData], { type: file.type });
+
+  // Convert base64 to binary
+  const binaryData = RNFetchBlob.base64.decode(fileData);
+
+  // Create a Buffer from the binary data
+  const fileBuffer = Buffer.from(binaryData, "binary");
 
   // Use crypto-js to hash the file name for additional security
   const hashedFileName = CryptoJS.SHA256(file.name).toString(CryptoJS.enc.Hex);
@@ -33,7 +39,7 @@ const uploadFile = async (file: File, options: Options) => {
   const params = {
     Bucket: options.bucket,
     Key: `${options.keyPrefix || ""}${hashedFileName}`,
-    Body: fileBlob,
+    Body: fileBuffer,
     ContentType: file.type,
   };
 
