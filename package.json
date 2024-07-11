@@ -1,6 +1,6 @@
 {
   "name": "react-native-s3-manager",
-  "version": "1.1.0",
+  "version": "1.0.1",
   "description": "Pure JavaScript react native library for uploading, deleting, and retrieving from AWS S3",
   "author": {
     "name": "Your Name"
