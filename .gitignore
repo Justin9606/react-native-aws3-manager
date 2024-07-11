@@ -26,3 +26,5 @@ coverage/
 # macOS
 .DS_Store
 
+# Ignore test files
+__tests__/
