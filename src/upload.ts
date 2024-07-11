@@ -1,5 +1,6 @@
 import { S3 } from "aws-sdk";
 import RNFetchBlob from "rn-fetch-blob";
+import CryptoJS from "crypto-js";
 
 interface File {
   uri: string;
@@ -26,9 +27,12 @@ const uploadFile = async (file: File, options: Options) => {
   const fileData = await RNFetchBlob.fs.readFile(file.uri, "base64");
   const fileBlob = new Blob([fileData], { type: file.type });
 
+  // Use crypto-js to hash the file name for additional security
+  const hashedFileName = CryptoJS.SHA256(file.name).toString(CryptoJS.enc.Hex);
+
   const params = {
     Bucket: options.bucket,
-    Key: `${options.keyPrefix || ""}${file.name}`,
+    Key: `${options.keyPrefix || ""}${hashedFileName}`,
     Body: fileBlob,
     ContentType: file.type,
   };

@@ -1,4 +1,5 @@
 import { S3 } from "aws-sdk";
+import CryptoJS from "crypto-js";
 
 interface Options {
   bucket: string;
@@ -14,9 +15,12 @@ const getFile = async (key: string, options: Options) => {
     region: options.region,
   });
 
+  // Use crypto-js to hash the file name for additional security
+  const hashedFileName = CryptoJS.SHA256(key).toString(CryptoJS.enc.Hex);
+
   const params = {
     Bucket: options.bucket,
-    Key: key,
+    Key: hashedFileName,
   };
 
   try {
