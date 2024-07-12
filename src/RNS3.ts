@@ -1,6 +1,8 @@
 /**
  * RNS3
  */
+// TODO
+// 1. time uploading  duration not more than 5sec
 
 import { S3 } from "aws-sdk";
 import { Request } from "./Request";

@@ -152,17 +152,3 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request for any bugs, improvements, or new features.
-
-## Issues
-
-If you encounter any issues, please report them on the [GitHub Issues](https://github.com/Justin9606/react-native-s3-manager/issues) page.
-
-## Repository
-
-Find the source code and contribute on GitHub: [react-native-s3-manager](https://github.com/Justin9606/react-native-s3-manager)
-
-## Author
-
-[Tokhirjon](https://tonybek.com/)
-
-Feel free to reach out for any questions or feedback.
