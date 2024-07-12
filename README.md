@@ -26,7 +26,7 @@ To install the library and its dependencies, run:
 npm install react-native-s3-manager crypto-js aws-sdk
 ```
 
-## Using yarn
+### Using yarn
 
 To install the library and its dependencies, run:
 
@@ -37,7 +37,7 @@ yarn add react-native-s3-manager crypto-js aws-sdk
 
 ## Usage
 
-# Uploading a File
+### Uploading a File
 
 To upload a file to AWS S3, use the put method provided by the library.
 
@@ -70,7 +70,7 @@ RNS3.put(file, options)
   });
 ```
 
-## Deleting a File
+### Deleting a File
 
 To delete a file from AWS S3, use the delete method provided by the library.
 
@@ -96,7 +96,7 @@ RNS3.delete("uploads/file-name.jpg", options)
   });
 ```
 
-## Retrieving a File
+### Retrieving a File
 
 To retrieve a file from AWS S3, use the get method provided by the library.
 
@@ -124,7 +124,7 @@ RNS3.get("uploads/file-name.jpg", options)
 
 ## API
 
-# RNS3.put(file, options)
+### RNS3.put(file, options)
 
 Uploads a file to AWS S3.
 
@@ -133,14 +133,14 @@ Uploads a file to AWS S3.
 
 ## RNS3.delete(key, options)
 
-# Deletes a file from AWS S3.
+### Deletes a file from AWS S3.
 
 `key`: String representing the key of the file to retrieve.
 `options`: Object containing `bucket`, `region`, `accessKey`, and `secretKey`.
 
 ## RNS3.get(key, options)
 
-# Retrieves a file from AWS S3.
+### Retrieves a file from AWS S3.
 
 `key`: String representing the key of the file to retrieve.
 `options`: Object containing `bucket`, `region`, `accessKey`, and `secretKey`.
