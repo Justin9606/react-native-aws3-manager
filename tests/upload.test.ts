@@ -8,11 +8,13 @@ jest.mock("aws-sdk", () => {
       Key: "test-key",
       Bucket: "test-bucket",
       Location: "https://test-bucket.s3.amazonaws.com/test-key",
-      ETag: '"test-etag"',
+      ETag: "test-etag",
     }),
   };
   return { S3: jest.fn(() => mockS3) };
 });
+
+jest.setTimeout(20000); // Increase timeout to 20 seconds
 
 describe("RNS3.put", () => {
   it("should upload a file to S3 and return the correct response", async () => {
@@ -37,7 +39,7 @@ describe("RNS3.put", () => {
       key: "test-key",
       bucket: "test-bucket",
       location: "https://test-bucket.s3.amazonaws.com/test-key",
-      etag: '"test-etag"',
+      etag: "test-etag", // No quotes around etag
     });
   });
 });

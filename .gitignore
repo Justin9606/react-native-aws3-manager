@@ -26,5 +26,8 @@ coverage/
 # macOS
 .DS_Store
 
-# Ignore test files
-__tests__/
+
+# Test and Jest files
+tests/
+jest.config.js
+jest.setup.js

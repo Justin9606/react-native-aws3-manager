@@ -10,7 +10,7 @@ const AWS_DEFAULT_S3_HOST = "s3.amazonaws.com";
 
 const EXPECTED_RESPONSE_KEY_VALUE_RE = {
   key: /<Key>(.*)<\/Key>/,
-  etag: /<ETag>"?([^"]*)"?<\/ETag>/,
+  etag: /<ETag>(.*)<\/ETag>/,
   bucket: /<Bucket>(.*)<\/Bucket>/,
   location: /<Location>(.*)<\/Location>/,
 };
