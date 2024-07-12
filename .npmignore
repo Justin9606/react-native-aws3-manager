@@ -1,19 +1,21 @@
 # Ignore configuration files
 tsconfig.json
+
 # Ignore logs
 logs/
 *.log
+
 # Ignore coverage
 coverage/
+
 # Ignore IDE files
 .vscode/
 .idea/
+
 # Ignore node_modules (should already be excluded by default)
 node_modules/
+
 # Ignore tests and Jest config files
 tests/
 jest.config.js
 jest.setup.js
-
-# Ignore build output (lib should be built during publish)
-lib/
