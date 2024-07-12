@@ -1,11 +1,3 @@
-import uploadFile from "./upload";
-import deleteFile from "./delete";
-import getFile from "./get";
-
-const RNS3 = {
-  put: uploadFile,
-  delete: deleteFile,
-  get: getFile,
-};
+import { RNS3 } from "./RNS3";
 
 export { RNS3 };
