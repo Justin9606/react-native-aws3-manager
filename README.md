@@ -1,6 +1,6 @@
 # react-native-s3-manager
 
-A React Native library for managing uploads, deletions, and retrievals from AWS S3 with enhanced features.
+A React Native library for managing uploads, deletions, and retrievals from AWS S3 with enhanced features. Inspired by the `react-native-aws3` package.
 
 ## Why Choose react-native-s3-manager?
 
@@ -23,7 +23,7 @@ A React Native library for managing uploads, deletions, and retrievals from AWS 
 To install the library and its dependencies, run:
 
 ```bash
-npm install react-native-s3-manager rn-fetch-blob crypto-js aws-sdk
+npm install react-native-s3-manager crypto-js aws-sdk
 ```
 
 ## Using yarn
@@ -31,7 +31,7 @@ npm install react-native-s3-manager rn-fetch-blob crypto-js aws-sdk
 To install the library and its dependencies, run:
 
 ```bash
-yarn add react-native-s3-manager rn-fetch-blob crypto-js aws-sdk
+yarn add react-native-s3-manager crypto-js aws-sdk
 
 ```
 
@@ -39,7 +39,7 @@ yarn add react-native-s3-manager rn-fetch-blob crypto-js aws-sdk
 
 # Uploading a File
 
-To upload a file to AWS S3, use the `put` method provided by the library.
+To upload a file to AWS S3, use the put method provided by the library.
 
 ```jsx
 import { RNS3 } from "react-native-s3-manager";
@@ -72,7 +72,7 @@ RNS3.put(file, options)
 
 ## Deleting a File
 
-To delete a file from AWS S3, use the `delete` method provided by the library.
+To delete a file from AWS S3, use the delete method provided by the library.
 
 ```jsx
 import { RNS3 } from "react-native-s3-manager";
@@ -98,7 +98,7 @@ RNS3.delete("uploads/file-name.jpg", options)
 
 ## Retrieving a File
 
-To retrieve a file from AWS S3, use the `get` method provided by the library.
+To retrieve a file from AWS S3, use the get method provided by the library.
 
 ```jsx
 import { RNS3 } from "react-native-s3-manager";
@@ -128,22 +128,22 @@ RNS3.get("uploads/file-name.jpg", options)
 
 Uploads a file to AWS S3.
 
-- `file`: Object containing `uri`, `name`, and `type` of the file.
-- `options`: Object containing `bucket`, `region`, `accessKey`, `secretKey`, `keyPrefix`, and `successActionStatus`.
+`file`: Object containing `uri`, `name`, and `type` of the file.
+`options`: Object containing `bucket`, `region`, `accessKey`, `secretKey`, `keyPrefix`, and `successActionStatus`.
 
-# RNS3.delete(key, options)
+## RNS3.delete(key, options)
 
-Deletes a file from AWS S3.
+# Deletes a file from AWS S3.
 
-- `key`: String representing the key of the file to retrieve.
-- `options`: Object containing `bucket`, `region`, `accessKey`, and `secretKey`.
+`key`: String representing the key of the file to retrieve.
+`options`: Object containing `bucket`, `region`, `accessKey`, and `secretKey`.
 
-# RNS3.get(key, options)
+## RNS3.get(key, options)
 
-Retrieves a file from AWS S3.
+# Retrieves a file from AWS S3.
 
-- `key`: String representing the key of the file to retrieve.
-- `options`: Object containing `bucket`, `region`, `accessKey`, and `secretKey`.
+`key`: String representing the key of the file to retrieve.
+`options`: Object containing `bucket`, `region`, `accessKey`, and `secretKey`.
 
 ## License
 
