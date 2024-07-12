@@ -131,16 +131,16 @@ Uploads a file to AWS S3.
 `file`: Object containing `uri`, `name`, and `type` of the file.
 `options`: Object containing `bucket`, `region`, `accessKey`, `secretKey`, `keyPrefix`, and `successActionStatus`.
 
-## RNS3.delete(key, options)
+### RNS3.delete(key, options)
 
-### Deletes a file from AWS S3.
+#### Deletes a file from AWS S3.
 
 `key`: String representing the key of the file to retrieve.
 `options`: Object containing `bucket`, `region`, `accessKey`, and `secretKey`.
 
-## RNS3.get(key, options)
+### RNS3.get(key, options)
 
-### Retrieves a file from AWS S3.
+#### Retrieves a file from AWS S3.
 
 `key`: String representing the key of the file to retrieve.
 `options`: Object containing `bucket`, `region`, `accessKey`, and `secretKey`.
