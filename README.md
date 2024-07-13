@@ -147,7 +147,7 @@ Uploads a file to AWS S3.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/Justin9606/react-native-s3-manager/blob/master/LICENSE.txt) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/Justin9606/react-native-aws3-manager/blob/master/LICENSE.txt) file for details.
 
 ## Contributing
 
