@@ -1,12 +1,12 @@
-# react-native-s3-manager
+# react-native-aws3-manager
 
 A React Native library for managing uploads, deletions, and retrievals from AWS S3 with enhanced features. Inspired by the `react-native-aws3` package.
 
-## Why Choose react-native-s3-manager?
+## Why Choose react-native-aws3-manager?
 
-`react-native-s3-manager` offers several advantages over the `react-native-aws3` package:
+`react-native-aws3-manager` offers several advantages over the `react-native-aws3` package:
 
-- **Maintained and Updated**: Unlike `react-native-aws3`, which is no longer maintained, `react-native-s3-manager` is actively maintained and regularly updated.
+- **Maintained and Updated**: Unlike `react-native-aws3`, which is no longer maintained, `react-native-aws3-manager` is actively maintained and regularly updated.
 - **Enhanced Features**: Includes additional functionalities such as the ability to delete objects and retrieve authenticated objects from AWS S3.
 - **TypeScript Support**: Fully written in TypeScript, providing better type safety and developer experience.
 - **Improved Security**: Utilizes `crypto-js` for added security features.
@@ -14,7 +14,7 @@ A React Native library for managing uploads, deletions, and retrievals from AWS 
 
 ## Description
 
-`react-native-s3-manager` provides an easy-to-use interface for uploading, deleting, and retrieving files from AWS S3 in React Native applications. This library leverages AWS SDK and offers additional features and security using `crypto-js`.
+`react-native-aws3-manager` provides an easy-to-use interface for uploading, deleting, and retrieving files from AWS S3 in React Native applications. This library leverages AWS SDK and offers additional features and security using `crypto-js`.
 
 ## Installation
 
@@ -23,7 +23,7 @@ A React Native library for managing uploads, deletions, and retrievals from AWS 
 To install the library and its dependencies, run:
 
 ```bash
-npm install react-native-s3-manager crypto-js aws-sdk
+npm install react-native-aws3-manager crypto-js aws-sdk
 ```
 
 ### Using yarn
@@ -31,7 +31,7 @@ npm install react-native-s3-manager crypto-js aws-sdk
 To install the library and its dependencies, run:
 
 ```bash
-yarn add react-native-s3-manager crypto-js aws-sdk
+yarn add react-native-aws3-manager crypto-js aws-sdk
 
 ```
 
@@ -42,7 +42,7 @@ yarn add react-native-s3-manager crypto-js aws-sdk
 To upload a file to AWS S3, use the put method provided by the library.
 
 ```jsx
-import { RNS3 } from "react-native-s3-manager";
+import { RNS3 } from "react-native-aws3-manager";
 
 const file = {
   uri: "path-to-your-file",
@@ -75,7 +75,7 @@ RNS3.put(file, options)
 To delete a file from AWS S3, use the delete method provided by the library.
 
 ```jsx
-import { RNS3 } from "react-native-s3-manager";
+import { RNS3 } from "react-native-aws3-manager";
 
 const options = {
   bucket: "your-bucket",
@@ -101,7 +101,7 @@ RNS3.delete("uploads/file-name.jpg", options)
 To retrieve a file from AWS S3, use the get method provided by the library.
 
 ```jsx
-import { RNS3 } from "react-native-s3-manager";
+import { RNS3 } from "react-native-aws3-manager";
 
 const options = {
   bucket: "your-bucket",
